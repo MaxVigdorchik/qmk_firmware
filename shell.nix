@@ -1,4 +1,5 @@
-{ avr ? true, arm ? true, teensy ? true }:
+{ avr ? false, arm ? true, teensy ? true }:
+
 let
   # We specify sources via Niv: use "niv update nixpkgs" to update nixpkgs, for example.
   sources = import ./nix/sources.nix {};
