@@ -174,23 +174,41 @@ layer_state_t layer_state_set_kb(layer_state_t state) {
     uint8_t layer = get_highest_layer(state);
     switch (layer) {
         case 1:
-            ML_LED_1(1);
-            ML_LED_4(1);
+            ML_LED_3(1);
+            ML_LED_6(1);
             break;
         case 2:
             ML_LED_2(1);
             ML_LED_5(1);
             break;
         case 3:
+            ML_LED_2(1);
             ML_LED_3(1);
+            ML_LED_5(1);
+            ML_LED_6(1);
             break;
         case 4:
+            ML_LED_1(1);
             ML_LED_4(1);
             break;
         case 5:
-            ML_LED_5(1);
+            ML_LED_1(1);
+            ML_LED_3(1);
+            ML_LED_4(1);
+            ML_LED_6(1);
             break;
         case 6:
+            ML_LED_1(1);
+            ML_LED_2(1);
+            ML_LED_4(1);
+            ML_LED_5(1);
+            break;
+        case 7:
+            ML_LED_1(1);
+            ML_LED_2(1);
+            ML_LED_3(1);
+            ML_LED_4(1);
+            ML_LED_5(1);
             ML_LED_6(1);
             break;
         default:
